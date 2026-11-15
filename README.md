@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-<p align="center"><img src="assets/banner.svg" alt="SSH Brute Detector" width="100%"></p>
+<p align="center"><img src="assets/banner.png" alt="SSH Brute Detector" width="100%"></p>
 
 <p align="center">
 <img alt="Python" src="https://img.shields.io/badge/Python-3.10+-E5484D?style=for-the-badge&logo=python&logoColor=white">
@@ -13,7 +13,7 @@
 
 <a id="sobre"></a>
 
-<p><img src="assets/secao-01.svg" alt="Sobre o projeto" width="100%"></p>
+<p><img src="assets/secao-01.png" alt="Sobre o projeto" width="100%"></p>
 
 Qualquer servidor Linux com a porta 22 aberta na internet começa a receber tentativa de login em minutos. Eu queria entender como um analista de SOC enxerga isso, então montei uma ferramenta que lê o `auth.log`, separa o que é ruído do que é ataque e gera alertas já mapeados no **MITRE ATT&CK**.
 
@@ -21,7 +21,7 @@ Qualquer servidor Linux com a porta 22 aberta na internet começa a receber tent
 
 <a id="como-funciona"></a>
 
-<p><img src="assets/secao-02.svg" alt="Como funciona" width="100%"></p>
+<p><img src="assets/secao-02.png" alt="Como funciona" width="100%"></p>
 
 ```mermaid
 flowchart LR
@@ -48,7 +48,7 @@ Algumas escolhas que fiz
 
 <a id="rodando"></a>
 
-<p><img src="assets/secao-03.svg" alt="Rodando na sua máquina" width="100%"></p>
+<p><img src="assets/secao-03.png" alt="Rodando na sua máquina" width="100%"></p>
 
 Só precisa de Python 3.10 ou mais novo. O repositório já vem com um log de laboratório em `exemplos/auth.log`, gerado pelo script `exemplos/gerar_log.py` com IPs reservados para documentação.
 
@@ -73,7 +73,7 @@ pip install -r requirements-dev.txt
 python -m pytest -q
 ```
 
-<p><img src="assets/secao-04.svg" alt="Exemplo de saída" width="100%"></p>
+<p><img src="assets/secao-04.png" alt="Exemplo de saída" width="100%"></p>
 
 ```text
   27 eventos lidos, 25 falhas e 2 logins aceitos
@@ -97,7 +97,7 @@ python -m pytest -q
 
 <a id="aprendi"></a>
 
-<p><img src="assets/secao-05.svg" alt="O que eu aprendi" width="100%"></p>
+<p><img src="assets/secao-05.png" alt="O que eu aprendi" width="100%"></p>
 
 - Como o sshd registra cada tipo de evento e onde ficam os logs no Linux
 - Escrever regex para logs reais, incluindo o detalhe do dia com espaço duplo (`Nov  4`)
@@ -113,7 +113,7 @@ O que eu faria para levar isso para produção
 
 <a id="estudos"></a>
 
-<p><img src="assets/secao-06.svg" alt="Estudei por aqui" width="100%"></p>
+<p><img src="assets/secao-06.png" alt="Estudei por aqui" width="100%"></p>
 
 Segui essas aulas e materiais para entender e aplicar tudo que está aqui.
 
